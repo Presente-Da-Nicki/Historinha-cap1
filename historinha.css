@@ -90,6 +90,8 @@ body {
 }
 
 .interacao #fechar {
+    top: 4px;
+
     animation-name: fechar;
     animation-duration: 0.85s;
     animation-timing-function: ease-in-out;
@@ -117,15 +119,15 @@ body {
 
 @keyframes fechar {
     0% {
-        top: 0px;
+        left: 0px;
     }
 
     50% {
-        top: 2px;
+        left: 2px;
     }
 
     100% {
-        top: 4px;
+        left: 4px;
     }
 }
 
@@ -149,6 +151,17 @@ body {
 /* adaptação mobile */
 
 @media screen and (max-width:600px) {
+
+    .container {
+        margin: 5% 5% 2% 5%;
+        width: 90%;
+        padding: 1%;
+        background: #f0f0d1;
+    }
+
+    p {
+        font-size:medium;
+    }
 
     .titulo {
         font-size: 18px;
